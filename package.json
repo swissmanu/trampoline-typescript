@@ -1,0 +1,29 @@
+{
+ "name": "trampolines",
+ "version": "1.0.0",
+ "main": "index.js",
+ "license": "MIT",
+ "dependencies": {
+  "@types/jest": "^21.1.5",
+  "jest": "^21.2.1",
+  "typescript": "^2.5.3",
+  "typescript-babel-jest": "^1.0.5"
+ },
+ "scripts": {
+  "build": "tsc",
+  "start": "node build/index.js",
+  "test": "jest"
+ },
+ "jest": {
+  "moduleFileExtensions": [
+	"js",
+	"ts"
+  ],
+  "testMatch": [
+   "**/*.test.ts"
+  ],
+  "transform": {
+   "^.+\\.(ts)$": "typescript-babel-jest"
+  }
+ }
+}
